@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+body {
+	background:url(images/world.jpg);
+}
+p {
+	padding-bottom: 10px;
+	font:.9em/1.25 Verdana, Geneva, sans-serif;
+}
+#wrapper1, #wrapper2 {
+	background: url(images/paper.jpg);
+	width: 960px;
+	margin: auto;
+	box-shadow: 3px 9px 10px #000;
+	position: relative;	
+}
+#wrapper1 {
+	padding-bottom:40px;
+}
+#wrapper2 {
+	margin-top:40px;
+}
+li {
+	list-style-type:none;
+}
+h2 {
+	font: 1.1em 'permanentMarkerRegular';
+	padding: 10px 40px;
+	color: #0c00ff;
+}
+.bullets {
+	/*For the bullets on "who.html" */
+	list-style-image: url(images/bullets.png);
+	padding: 10px 75px;
+}
+/*Begin header styling----------------------------------------------------*/
+header {
+	height: 200px;
+}
+#home {
+		background:url(images/header.png) no-repeat;
+		width:790px;
+		height:200px;
+		display:inline-block;
+		text-indent:-9999px;
+		float:left;
+}
+#home:hover {
+	background-position: 0 -200px;
+}
+#donate {
+	background:url(images/donate_btn.png);
+	width:150px;
+	height:139px;
+	text-indent:-9999px;
+	display:inline-block;
+	float:right;
+	margin:40px 10px;
+}
+#donate:hover {
+	background-position: 0 -138px;
+}
+/*End header styling----------------------------------------------------*/
+
+/*Begin navigation styling----------------------------------------------------*/
+#main_nav, #sec_nav {
+	background:url(images/nav2.png) no-repeat;
+	width: 960px;
+	height: 47px;
+	padding: 5px 0 0 15px;
+}
+#main_nav li, #sec_nav li {
+	display:inline;
+	text-align: center;
+	padding-top:25px;
+}
+#main_nav a, #sec_nav a {	
+	display:inline-block;
+	width:91px;
+	height:33px;
+	text-decoration:none;
+	font-family: 'permanentMarkerRegular';
+	font-size:.98em;
+	padding-top:10px;
+	color:#0c00ff;
+}
+#main_nav a:hover, #sec_nav a:hover {
+	background:url(images/hover.gif) no-repeat;
+	color: #fff;
+}
+#sec_nav {
+	margin-top:20px;
+}
+#main_nav li .active {
+	color:#F00;
+}
+/*End navigation styling----------------------------------------------------*/
+#sponsors h2{
+	font: 1.1em/1.25 'permanentMarkerRegular';	
+	color:#f00;	
+	padding:15px;
+}
+#sponsors li {
+	margin: 15px;
+	display:inline;
+}
+.head1 {
+	/*Used for blue crayon*/
+	width:476;
+	height:99;
+}
+.head2 {
+	/*Used for red crayon*/
+	width:473;
+	height:94;
+}
+.left {
+	float:left;/*Used to float content images*/
+	margin:0 5px 5px 35px;
+}
+.right {
+	float:right;/*Used to float content images*/
+}
+@font-face {
+	/*Used to add special type font*/
+    font-family: 'permanentMarkerRegular';
+    src: url('fonts/permanentMarker-webfont.eot');
+    src: url('fonts/permanentMarker-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/permanentMarker-webfont.woff') format('woff'),
+         url('fonts/permanentMarker-webfont.ttf') format('truetype'),
+         url('fonts/permanentMarker-webfont.svg#PermanentMarkerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#main_content {
+	width: 765px;
+	min-height:540px;
+	padding: 10px 0 0 20px;
+}
+#main_content h1 {
+    font: 2em/1.25 'permanentMarkerRegular';
+	color:#f00;	
+}
+#main_content p {
+	padding-left:30px;
+}
+/*Begin social media button styling----------------------------------------------------*/
+#social {
+	position:absolute;
+	top:230px;
+	right:20px;
+}
+a#facebook, a#twitter, a#pintrest, a#tumblr, a#renren, a#youTube {
+	background: url(images/social2.png);
+	display:inline-block; 
+	text-indent:-9999px;
+	list-style-type:none;
+	width: 75px;
+	height: 77px;
+	margin:10px 25px;
+}
+a#facebook:hover {
+	background-position:0 -77px;
+}
+a#twitter {
+	background-position:-75px 0;
+}
+a#twitter:hover {
+	background-position:-75px -76px;
+}
+a#pintrest {
+	background-position:-150px 0;
+}
+a#pintrest:hover {
+	background-position:-150px -76px;
+}
+a#tumblr {
+	background-position:-225px 0;
+}
+a#tumblr:hover {
+	background-position:-225px -76px;
+}
+a#renren {
+	background-position:-300px 0;
+}
+a#renren:hover {
+	background-position:-300px -76px;
+}
+a#youTube {
+	background-position:-375px 0;
+}
+a#youTube:hover {
+	background-position:-375px -76px;
+}
+/*End social media button styling----------------------------------------------------*/ 
+#disclaimer h3{
+	padding: 10px 50px;
+	font-weight: bold;
+}
+#disclaimer p{
+	padding: 10px 50px;
+	text-align: center;
+	font-style: italic;	
+	font-size:.8em;
+	color:#333
+}
+
+/*Begin lytebox styling-------------------------------------------------------------------*/
+form#contact {
+	background:url(images/contactbg.png) repeat-y;
+	width: 680px;
+	margin:20px;
+	padding:30px;
+/*	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom:2px;
+	padding:5px 10px;
+	border: #f00 solid 1px;*/
+	counter-reset:fieldsets;
+}
+label {
+	color: #f00;
+	font: .95em/1.25 'permanentMarkerRegular';
+}
+form#contact fieldset {
+	border:none;
+	margin-bottom:10px;
+}
+form#contact legend {
+	color: #0c00ff;
+	font: 1.5em/1.25 'permanentMarkerRegular';
+	font-weight:bold;
+	padding-bottom:10px;
+}
+form#contact ol li{
+	list-style:none;
+	padding:5px 0;
+	/* CSS3 rounded corners*/
+/*	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom:2px;
+	padding:5px 10px;
+	border: #f00 solid 2px;*/
+}
+#name, #email {
+	width:648px;
+	background:#FF9;
+}
+#address { 
+	width:647px;
+	background:#FF9;
+}
+#comments {
+	width:567px;
+	background:#FF9;	
+}
+#phone_num { 
+	width:646px;
+	background:#FF9;
+}
+button {
+	font:1.2em 'permanentMarkerRegular';
+	font-weight: bold;
+	color:#0c00ff;
+	background: #ff0;
+	border: 1px solid #f00;
+	width:70px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px #000;
+}
+.checkbox {
+	font: .90em/1.25 'permanentMarkerRegular';
+}
+/*End contact form styling-------------------------------------------------------------------*/
+
+/*Begin lytebox styling-------------------------------------------------------------------*/
+.lytebox img {
+	padding:20px;
+}
+/*End lytebox styling-------------------------------------------------------------------*/
+
+/*Begin schedule table styling----------------------------------------------------*/
+#schedule {
+	margin-left:35px;
+}
+#schedule caption {
+	color:#0c00ff;
+	font: 1.5em/1.25 'permanentMarkerRegular';
+	font-weight:bold;
+	padding-bottom:10px;
+}
+#schedule th{
+	border: #f00 solid 2px;
+	width:80px;
+	background: url(images/tablebg.png) repeat-y;
+	color: #f00;
+	font: .95em/1.25 'permanentMarkerRegular';
+}
+#schedule td{
+	margin-bottom:2px;
+	padding:5px 5px;
+	border: #f00 solid 1px;
+}
+#schedule .nopad {
+	/*removes the padding on the p text in #main_content*/
+	padding:0;
+}
+/*Table additional info styling----------------------------------------------------*/
+#inner_container {
+	position:relative;
+	height:970px;
+}
+#inner_table {
+	width:300px;
+	position:absolute;
+	top:0px;
+	left:0;
+}
+#inner_content {
+	width:470px;
+	position:absolute;
+	top:35px;
+	right:0;
+}
+#inner_container p span {
+	color:#0c00ff;
+	font: 1.3em/1.25 'permanentMarkerRegular';
+}
+/*End schedule table styling----------------------------------------------------*/
+iframe {
+	padding:30px;
+	background:url(images/iframe.png);
+}
+.link {
+	text-decoration:none;
+	color:#0c00ff;
+	font: 1.1em/1.25 'permanentMarkerRegular';
+}
